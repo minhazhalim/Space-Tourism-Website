@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+     <title>Space Tourism | Destination</title>
+     <link rel="stylesheet" href="index.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' integrity='sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==' crossorigin='anonymous'/>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+     <script src="navigation.js" defer></script>
+     <script src="tabs.js" defer></script>
+</head>
+<body class="destination">
+     <a href="#main" class="skip-to-content">skip to content</a>
+     <header class="primary-header flex">
+          <div><img src="./assets/shared/logo.svg" alt="Space Tourism Logo" class="logo"></div>
+          <button type="button" class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">menu</span></button>
+          <nav>
+               <ul class="primary-navigation underline-indicators flex" id="primary-navigation">
+                    <li><a href="index.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">00</span>home</a></li>
+                    <li class="active"><a href="destination.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">01</span>destination</a></li>
+                    <li><a href="crew.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">02</span>crew</a></li>
+                    <li><a href="technology.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">03</span>technology</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main class="grid-container grid-container--destination flow" id="main">
+          <h1 class="numbered-title"><span aria-hidden="true">01</span>pick your destination</h1>
+          <picture id="moon-image">
+               <source src="./assets/destination/image-moon.webp" type="image/webp">
+               <img src="./assets/destination/image-moon.png" alt="The Moon">
+          </picture>
+          <picture hidden id="mars-image">
+               <source src="./assets/destination/image-mars.webp" type="image/webp">
+               <img src="./assets/destination/image-mars.png" alt="The Planet Mars">
+          </picture>
+          <picture hidden id="europa-image">
+               <source src="./assets/destination/image-europa.webp" type="image/webp">
+               <img src="./assets/destination/image-europa.png" alt="The Planet Europa">
+          </picture>
+          <picture hidden id="titan-image">
+               <source src="./assets/destination/image-titan.webp" type="image/webp">
+               <img src="./assets/destination/image-titan.png" alt="The Moon Titan">
+          </picture>
+          <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+               <button type="button" class="text-transform-uppercase ff-sans-cond text-accent letter-spacing-2" role="tab" aria-selected="true" aria-controls="moon-tab" tabindex="0" data-image="moon-image">moon</button>
+               <button type="button" class="text-transform-uppercase ff-sans-cond text-accent letter-spacing-2" role="tab" aria-selected="false" aria-controls="mars-tab" tabindex="-1" data-image="mars-image">mars</button>
+               <button type="button" class="text-transform-uppercase ff-sans-cond text-accent letter-spacing-2" role="tab" aria-selected="false" aria-controls="europa-tab" tabindex="-1" data-image="europa-image">europa</button>
+               <button type="button" class="text-transform-uppercase ff-sans-cond text-accent letter-spacing-2" role="tab" aria-selected="false" aria-controls="titan-tab" tabindex="-1" data-image="titan-image">titan</button>
+          </div>
+          <article class="destination-info flow" id="moon-tab" role="tabpanel" tabindex="0">
+               <h2 class="fs-800 ff-serif text-transform-uppercase">moon</h2>
+               <p>see our planet as you’ve never seen it before. a perfect relaxing trip away to help regain perspective and come back refreshed. while you’re there, take in some history by visiting the luna 2 and apollo 11 landing sites.</p>
+               <div class="destination-meta flex">
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">avg. distance</h3>
+                         <p class="ff-serif text-transform-uppercase">384,400 km</p>
+                    </div>
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">est. travel time</h3>
+                         <p class="ff-serif text-transform-uppercase">3 days</p>
+                    </div>
+               </div>
+          </article>
+          <article hidden class="destination-info flow" id="mars-tab" role="tabpanel" tabindex="0">
+               <h2 class="fs-800 ff-serif text-transform-uppercase">mars</h2>
+               <p class="text-transform-capitalize">don’t forget to pack your hiking boots. you’ll need them to tackle olympus mons, the tallest planetary mountain in our solar system. it’s two and a half times the size of Everest!</p>
+               <div class="destination-meta flex">
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">avg. distance</h3>
+                         <p class="ff-serif text-transform-uppercase">225 mil. km</p>
+                    </div>
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">est. travel time</h3>
+                         <p class="ff-serif text-transform-uppercase">9 months</p>
+                    </div>
+               </div>
+          </article>
+          <article hidden class="destination-info flow" id="europa-tab" role="tabpanel" tabindex="0">
+               <h2 class="fs-800 ff-serif text-transform-uppercase">europa</h2>
+               <p class="text-transform-capitalize">the smallest of the four galilean moons orbiting jupiter, europa is a winter lover’s dream. with an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+               <div class="destination-meta flex">
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">avg. distance</h3>
+                         <p class="ff-serif text-transform-uppercase">628 mil. km</p>
+                    </div>
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">est. travel time</h3>
+                         <p class="ff-serif text-transform-uppercase">3 years</p>
+                    </div>
+               </div>
+          </article>
+          <article hidden class="destination-info flow" id="titan-tab" role="tabpanel" tabindex="0">
+               <h2 class="fs-800 ff-serif text-transform-uppercase">titan</h2>
+               <p class="text-transform-capitalize">the only moon known to have a dense atmosphere other than earth, titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the rings of saturn.</p>
+               <div class="destination-meta flex">
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">avg. distance</h3>
+                         <p class="ff-serif text-transform-uppercase">1.6 bil. km</p>
+                    </div>
+                    <div>
+                         <h3 class="text-accent fs-200 text-transform-uppercase">est. travel time</h3>
+                         <p class="ff-serif text-transform-uppercase">7 years</p>
+                    </div>
+               </div>
+          </article>
+     </main>
+</body>
+</html>

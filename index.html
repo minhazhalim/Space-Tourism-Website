@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <title>Space Tourism | Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' integrity='sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==' crossorigin='anonymous'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <script src="navigation.js" defer></script>
+</head>
+<body class="home">
+    <a href="#main" class="skip-to-content">skip to content</a>
+    <header class="primary-header flex">
+      <div><img src="./assets/shared/logo.svg" alt="Space Tourism Logo" class="logo"></div>
+      <button type="button" class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">menu</span></button>
+      <nav>
+        <ul class="primary-navigation underline-indicators flex" id="primary-navigation">
+          <li class="active"><a href="index.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">00</span>home</a></li>
+          <li><a href="destination.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">01</span>destination</a></li>
+          <li><a href="crew.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">02</span>crew</a></li>
+          <li><a href="technology.html" class="ff-sans-cond text-transform-uppercase text-white letter-spacing-2"><span aria-hidden="true">03</span>technology</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="grid-container grid-container--home" id="main">
+      <div>
+        <h1 class="text-accent fs-500 ff-sans-cond text-transform-uppercase letter-spacing-1">so, you want to travel to <span class="d-block fs-900 ff-serif text-white">space</span></h1>
+        <p class="text-transform-capitalize">let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <div><a href="destination.html" class="large-button text-transform-uppercase ff-serif text-dark bg-white">explore</a></div>
+    </main>
+</body>
+</html>
